@@ -1,0 +1,27 @@
+package com.chen.ocsw.entity;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@TableName("t_ocsw_evacuation")
+public class EvacuationCheck implements OcswRecord {
+    @com.baomidou.mybatisplus.annotation.TableId(type = com.baomidou.mybatisplus.annotation.IdType.AUTO)
+    private Long id;
+    private String businessNo;
+    private Long windowId;
+    private String status;
+    @com.baomidou.mybatisplus.annotation.TableField(fill = com.baomidou.mybatisplus.annotation.FieldFill.INSERT)
+    private String operator;
+    private String remarks;
+    @com.baomidou.mybatisplus.annotation.TableField(fill = com.baomidou.mybatisplus.annotation.FieldFill.INSERT)
+    private java.time.LocalDateTime createdAt;
+    @com.baomidou.mybatisplus.annotation.TableField(fill = com.baomidou.mybatisplus.annotation.FieldFill.INSERT_UPDATE)
+    private java.time.LocalDateTime updatedAt;
+    private Integer peopleExpected;
+    private Integer peopleOut;
+    private Integer toolsExpected;
+    private Integer toolsOut;
+    private java.time.LocalDateTime checkedAt;
+}

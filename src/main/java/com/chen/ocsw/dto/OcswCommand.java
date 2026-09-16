@@ -1,0 +1,65 @@
+package com.chen.ocsw.dto;
+
+import lombok.Data;
+import java.time.LocalDateTime;
+
+@Data
+public class OcswCommand {
+    private String businessNo;
+    private Long windowId;
+    private Long relatedId;
+    private Long secondaryId;
+    private String referenceNo;
+    private String lineCode;
+    private String result;
+    private String remarks;
+    private LocalDateTime startAt;
+    private LocalDateTime endAt;
+    private Integer quantity;
+    private Integer secondaryQuantity;
+    private Integer expectedCount;
+    private Integer actualCount;
+    private Boolean confirmed;
+    private Boolean approved;
+    private String reviewer;
+    private String windowNo;
+    private String sectionCode;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private Integer maxCrew;
+    private String requestedBy;
+    private String orderNo;
+    private LocalDateTime issuedAt;
+    private LocalDateTime expiresAt;
+    private String confirmedBy;
+    private String pointCode;
+    private Integer sequenceNo;
+    private Boolean installed;
+    private LocalDateTime installedAt;
+    private Boolean removed;
+    private LocalDateTime removedAt;
+    private String firstReviewer;
+    private String secondReviewer;
+    private String crewCode;
+    private Boolean qualified;
+    private Integer plannedCount;
+    private LocalDateTime enteredAt;
+    private String defectCode;
+    private String severity;
+    private LocalDateTime foundAt;
+    private String retestResult;
+    private LocalDateTime requestedEnd;
+    private LocalDateTime approvedEnd;
+    private String reason;
+    private Integer peopleExpected;
+    private Integer peopleOut;
+    private Integer toolsExpected;
+    private Integer toolsOut;
+    private LocalDateTime checkedAt;
+    private String conclusion;
+    private LocalDateTime reviewedAt;
+    private String certificateNo;
+    private String eventType;
+    private LocalDateTime eventTime;
+    private Boolean valid;
+}
